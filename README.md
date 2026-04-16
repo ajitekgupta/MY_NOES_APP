@@ -1,16 +1,31 @@
-# React + Vite
+# Notes Keeper - React Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, high-performance note-taking application inspired by Google Keep. This project focuses on **State Management**, **Component-Based Architecture**, and **Data Persistence**.
 
-Currently, two official plugins are available:
+##  Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* **Persistent Data:** Integrated `localStorage` to ensure notes are saved even after the browser is refreshed or closed.
+* **Modular Architecture:** Built using clean, reusable React components (`Header`, `Footer`, `Note`, `CreateArea`) for professional-grade maintainability.
+* **Modern UI/UX:** A customized "Blackish" dark-themed interface designed for better readability and reduced eye strain.
+* **Interactive Design:** Smooth interactions using Material UI icons and React Zoom/Fab components for a polished feel.
+* **Fast Build Performance:** Powered by **Vite** for optimized development and bundling.
 
-## React Compiler
+## Tech Stack
+* **Frontend:** React.js
+* **Build Tool:** Vite
+* **Icons & UI:** Material UI (@mui/icons-material)
+* **Styling:** CSS3 
+* **Persistence:** Browser LocalStorage API
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Project Structure
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+src/
+├── components/
+│   ├── Header.jsx      # Sticky top navigation
+│   ├── Footer.jsx      # Copyright information
+│   ├── Note.jsx        # Individual note card template
+│   └── CreateArea.jsx  # Input logic and state handling
+├── App.jsx             # Main logic, State & LocalStorage persistence
+├── index.css          
+└── main.jsx            
